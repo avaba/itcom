@@ -1,0 +1,285 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+a:hover
+	text-decoration: none
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+/*Header*/
+
+.head
+	padding: 10px 0px
+	background: #fff
+	a
+		color: #000
+		font-weight: 700
+		font-size: 24px
+
+.home
+	position: relative
+	height: 460px
+	overflow: hidden
+	&__bg
+		position: absolute
+		top: 0
+		height: 100%
+		left: 50%
+		margin-left: -40px
+		display: block
+		&:after
+			content: ''
+			position: absolute
+			right: -1000%
+			width: 1000%
+			height: 100%
+			top: 0
+			background: linear-gradient(to top, #46154c, #340f38)
+	h1
+		font-size: 40px
+		line-height: 65px
+		font-weight: 700
+		margin: 0
+		margin-bottom: 75px
+
+.flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	height: 100%
+	position: relative
+	&__auto
+		margin: auto
+		width: 100%
+
+.call
+	display: inline-block
+	border: 2px solid $accent
+	color: $accent
+	font-weight: 700
+	text-transform: uppercase
+	padding: 7px 25px
+	transition: all .3s
+	letter-spacing: 0.9px
+	&:hover
+		background: $accent
+		color: #fff
+		transition: all .3s
+
+.block
+	margin: 50px 0px
+	h2
+		font-size: 28px
+		margin: 0
+		margin-bottom: 20px
+
+.why
+	&__image
+		width: 113px
+		height: 105px
+		display: block
+		margin: 0 auto
+		background: url(../img/icon.svg)		
+		margin-bottom: 40px
+	&__content
+		text-align: center
+		font-weight: 400
+		font-size: 18px
+		margin-top: 50px
+		&:nth-of-type(1) .why__image
+			background-position: 0px 0
+			width: 105px
+		&:nth-of-type(2) .why__image
+			background-position: -242px 0
+		&:nth-of-type(3) .why__image
+			background-position: -490px 0
+		&:nth-of-type(4) .why__image
+			background-position: -735px 0
+		&:nth-of-type(5) .why__image
+			background-position: -980px 0
+			width: 113px  
+
+.offer
+	.container
+		background-image: linear-gradient(3deg, #0db14b 0%, #086f2f 100%)
+		padding: 0 30px 
+	p
+		color: #fff
+		margin: 0
+		padding: 35px 0
+		font-size: 22px
+		font-weight: 700
+		line-height: 26px
+	input
+		background: #fff
+		border: 0
+		height: 36px
+		line-height: 36px
+		padding-left: 15px
+		width: 100%
+		color: #000	
+	button
+		background: $accent
+		color: #fff
+		border: 0	
+		height: 36px
+		line-height: 32px
+		border: 2px solid $accent
+		width: 100%
+		color: #fff
+		margin: 0
+		transition: all .3s
+		&:hover
+			cursor: pointer
+			color: $accent
+			border: 2px solid $accent
+			background: #fff
+			line-height: 32px
+			transition: all .3s
+.tarif
+	.card
+		border: 0
+		border-radius: 0
+		margin-top: 15px
+	.card-body
+		padding: 20px
+		position: relative
+		padding-bottom: 130px
+		background: #cdcfd1
+		border-radius: 0
+		ul
+			padding: 0
+			margin: 0	
+			padding-left: 15px
+			font-size: 14px
+			li
+				margin-bottom: 10px
+		.call
+			position: absolute
+			bottom: 20px
+			left: 20px
+	&__title
+		display: block
+		font-weight: bold	
+		margin-bottom: 30px
+		min-height: 48px
+	&__price
+		display: block
+		font-weight: 700
+		position: absolute
+		left: 20px
+		bottom: 80px	
+
+.model
+	&__slide
+		text-align: center
+		margin-top: 50px
+		img
+			max-width: 100%		
+	.slick-slide:focus
+		outline: none		
+
+.client
+	h2
+		margin-bottom: 50px
+	&__block
+		position: relative
+		padding-left: 130px
+		font-weight: 700
+		font-size: 24px
+		margin-bottom: 90px
+		img
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -45px
+
+.start
+	&__block
+		height: 300px
+		background: url(../img/bg2.svg)	no-repeat	
+		background-size: cover
+		padding: 30px	
+	&__form
+		background: #96969a	
+		height: 300px
+		padding: 30px	45px
+		color: #fff
+		&_title
+			font-weight: 400
+			display: block
+			margin-bottom: 20px
+			font-size: 18px
+		input
+			width: 100%
+			height: 40px
+			line-height: 40px
+			padding-left: 15px
+			border: 0
+			margin-bottom: 10px
+		button
+			background: $accent
+			color: #fff
+			border: 0	
+			height: 47px
+			line-height: 43px
+			border: 2px solid $accent
+			width: 100%
+			color: #fff
+			margin: 0
+			transition: all .3s
+			margin-top: 15px
+			text-transform: uppercase
+			&:hover
+				cursor: pointer
+				color: $accent
+				border: 2px solid $accent
+				background: #fff
+				line-height: 43px
+				transition: all .3s
+					
+
+.pl-none
+	padding-left: 0
+
+.pr-none
+	padding-right: 0	
+
+@import "media" // Always at the end
