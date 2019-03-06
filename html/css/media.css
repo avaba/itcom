@@ -1,0 +1,257 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	.offer .container {
+		padding-bottom: 50px;
+	}
+
+	.offer p br {
+		display: none;
+	}
+
+	.offer p {
+		max-width: 500px;
+	}
+
+	.tarif .card {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.tarif .card-body {
+		padding: 30px;
+		padding-bottom: 130px;
+	}
+
+	.tarif__title {
+		min-height: auto;
+	}
+
+	.tarif__price {
+		left: 30px;
+		bottom: 90px;
+	}
+
+	.tarif .card-body .call {
+		bottom: 30px;
+		left: 30px;
+	}
+
+	.start__form {
+		padding: 30px 25px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.home__bg {
+		left: 65%;
+	}
+
+	.client__block {
+		font-size: 16px;
+	}
+
+	.client__block br {
+		display: none;
+	}
+
+	section.start.block {
+		margin-top: 0;
+	}
+
+	section.client.block {
+		margin-bottom: 0;
+	}
+
+	.start__form {
+		padding: 23px 15px;
+	}
+
+	.start__form_title {
+		font-size: 16px;
+	}
+
+	.start__block br {
+		display: none;
+	}
+
+	.map {
+		height: 200px;
+		margin-bottom: 30px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.hidden-sm-down {
+		display: none;
+	}
+
+	.footer, .head {
+		text-align: center;
+	}
+
+	span.home__bg img {
+		display: none;
+	}
+
+	span.home__bg {
+		left: 30px;
+		right: 0;
+		height: 100%;
+		margin: 0;
+		position: absolute;
+		background: url(../img/bg3.svg) no-repeat;
+		background-position: 0% 50%;
+	}
+
+	.home h1, .home .call {
+		position: relative;
+		z-index: 3;
+	}
+
+	.home h1 {
+		color: #fff;
+		margin-left: 55px;
+		font-size: 34px;
+		line-height: normal;
+	}
+
+	.home .call {
+		color: #fff;
+		border-color: #fff;
+		margin-left: 55px;
+	}
+
+	section.home {
+		height: 400px;
+	}
+
+	.offer input {
+		margin-bottom: 15px;
+	}
+
+	.slick-slide {
+		padding: 0 15px;
+	}
+
+	.client__block {
+		padding-left: 110px;
+	}
+
+	.pr-none {
+		padding-right: 15px;
+	}
+
+	.pl-none {
+		padding-left: 15px;
+	}
+
+	.start__form {
+		height: auto;
+		padding: 30px;
+	}
+
+	.start__form_title {
+		font-size: 20px;
+	}
+
+	.order-sm-first {
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px) {
+	.client__block {
+		padding-top: 110px;
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.client__block img {
+		margin: 0;
+		top: 0;
+		left: 50%;
+		margin-left: -45px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+	.head a {
+		font-size: 16px;
+	}
+
+	section.home {
+		background: #e6e6e6;
+		height: auto;
+		padding: 50px 0;
+		text-align: center;
+	}
+
+	span.home__bg {
+		display: none;
+	}
+
+	.home h1 {
+		margin-left: 0;
+		font-size: 24px;
+		margin-bottom: 30px;
+		color: #000;
+	}
+
+	.home .call {
+		margin-left: 0;
+		color: #7b1f86;
+		border-color: #7b1f86;
+	}
+
+	.block h2 {
+		font-size: 24px;
+	}
+
+	.why__content br {
+		display: none;
+	}
+
+	.start__block {
+		background: #fff;
+		padding: 0;
+		height: auto;
+		margin-bottom: 30px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

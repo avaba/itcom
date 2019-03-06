@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	$('.model__slide').slick({
-		dots: true,
+		dots: false,
 		infinite: false,
 		speed: 300,
 		slidesToShow: 4,
